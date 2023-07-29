@@ -32,16 +32,7 @@ console.log(greeting)
 // console.log(`hello, ${userName}! How Are you?`);
 
 
-//      Functions
-//  DRY - don't repeat yourself
-
-
-function sayHi() {
-    console.log('Привет уважаемый пользователь!');
-}
-sayHi()
-
-//          SWITCH CASE
+//                  ========= SWITCH CASE ==========
 
 var carColor = "";
 
@@ -56,20 +47,67 @@ var carColor = "";
 // }
 
 
-// switch case
+//                  ==========SWITCH CASE==========
 // break - стопит на нужном цвете
-switch (carColor) {
-    case "green":
-        console.log('Car color is GREEN')
-        //breake
-    case "yellow":
-        console.log('Car color is YELLOW')
-        //breake
-    case "red":
-        console.log('Car color is RED')
-        //breake
-    default:
-        console.log('Car color is default')
+
+// switch (carColor) {
+//     case "green":
+//         console.log('Car color is GREEN')
+//         //breake
+//     case "yellow":
+//         console.log('Car color is YELLOW')
+//         //breake
+//     case "red":
+//         console.log('Car color is RED')
+//         //breake
+//     default:
+//         console.log('Car color is default')
+// }
+
+
+//                  ========== FUNCTIONS ==========
+
+//  DRY - don't repeat yourself
+
+// function sayHi() {
+//     console.log('Привет уважаемый пользователь!');
+// }
+// sayHi()
+
+
+
+//  function declaration (можем вызывать до того как она объявлена в коде)
+// sayHello()
+// function sayHello() {
+//     console.log('Hi!');
+// }
+
+// let name = "Bob"
+// console.log(name)
+// //  function expression
+// const sayHi = function () {
+//     alert("hi");
+// }
+
+var carName = 'Ford';
+var carYear = 2020
+
+var personeName = 'Fill';
+var personYear = 2010
+
+function calculateAge(year) {
+    var currentYear = 2023
+    var result = currentYear - year
+    return result
 }
 
+function checkAndLogAge(year) {
+    if (calculateAge(year) < 10) {
+        console.log('Возраст меньше 10 лет');
+    } else {
+        console.log('Возраст больше 10 лет');
+    }
+}
 
+checkAndLogAge(carYear)
+checkAndLogAge(personYear)
