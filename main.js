@@ -16,5 +16,11 @@ let greeting;
 let time = 10;
 
 greeting = time < 10 ? "Good Morning" : "Good Day";
-console.log(greeting)
+console.log(greeting);
+
+let hi = 'Hi, Mark!';
+let howAreYou = ' What is it?';
+let sayHi = hi + howAreYou;
+
+console.log(sayHi);
 
