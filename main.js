@@ -34,7 +34,7 @@ console.log(greeting)
 
 //                  ========= SWITCH CASE ==========
 
-var carColor = "";
+// var carColor = "";
 
 // if (carColor === "green") {
 //     console.log('Car color is GREEN')
@@ -112,17 +112,50 @@ var carColor = "";
 // checkAndLogAge(carYear)
 // checkAndLogAge(personYear)
 
-const phoneName = 'Apple';
-const phoneAge = 2002;
+// const phoneName = 'Apple';
+// const phoneAge = 2002;
+
+// function calculateAge(year) {
+// const currentYear = 2023
+// const result = currentYear - year
+// return result
+// }
+
+// if (calculateAge(phoneAge) < 10) {
+//             console.log('Возраст меньше 10 лет');
+//         } else {
+//             console.log('Возраст больше 10 лет');
+//         }
+
+
+
+//  1.
+let carName = 'Ford';
+let carAge = 2020;
+let personAge = 1990;
 
 function calculateAge(year) {
-const currentYear = 2023
-const result = currentYear - year
-return result
+    let currentYear = 2023;
+    let result = currentYear - year
+    return result
 }
 
-if (calculateAge(phoneAge) < 10) {
-            console.log('Возраст меньше 10 лет');
-        } else {
-            console.log('Возраст больше 10 лет');
-        }
+//  3. Создаем еще одну функцию
+function checkAngLogAge(year) {
+
+
+//  2.
+if (calculateAge(year) < 10) {
+    console.log('Менее 10 лет')
+} else {
+    console.log('Более 10 лет')
+}
+}
+checkAngLogAge(carAge)
+checkAngLogAge(personAge)
+
+// if (calculateAge(personeAge) > 20) {
+//     console.log('Старше 20')
+// } else {
+//     console.log('Младше 20')
+// }
