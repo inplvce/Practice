@@ -89,25 +89,40 @@ var carColor = "";
 //     alert("hi");
 // }
 
-var carName = 'Ford';
-var carYear = 2020
+// var carName = 'Ford';
+// var carYear = 2020
 
-var personeName = 'Fill';
-var personYear = 2010
+// var personeName = 'Fill';
+// var personYear = 2010
+
+// function calculateAge(year) {
+//     var currentYear = 2023
+//     var result = currentYear - year
+//     return result
+// }
+
+// function checkAndLogAge(year) {
+//     if (calculateAge(year) < 10) {
+//         console.log('Возраст меньше 10 лет');
+//     } else {
+//         console.log('Возраст больше 10 лет');
+//     }
+// }
+
+// checkAndLogAge(carYear)
+// checkAndLogAge(personYear)
+
+const phoneName = 'Apple';
+const phoneAge = 2002;
 
 function calculateAge(year) {
-    var currentYear = 2023
-    var result = currentYear - year
-    return result
+const currentYear = 2023
+const result = currentYear - year
+return result
 }
 
-function checkAndLogAge(year) {
-    if (calculateAge(year) < 10) {
-        console.log('Возраст меньше 10 лет');
-    } else {
-        console.log('Возраст больше 10 лет');
-    }
-}
-
-checkAndLogAge(carYear)
-checkAndLogAge(personYear)
+if (calculateAge(phoneAge) < 10) {
+            console.log('Возраст меньше 10 лет');
+        } else {
+            console.log('Возраст больше 10 лет');
+        }
