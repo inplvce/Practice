@@ -130,29 +130,32 @@ console.log(greeting)
 
 
 //  1.
-let carName = 'Ford';
-let carAge = 2020;
-let personAge = 1990;
+// let carName = 'Ford';
+// let carAge = 2020;
+// let personAge = 1990;
 
-function calculateAge(year) {
-    let currentYear = 2023;
-    let result = currentYear - year
-    return result
-}
+// function calculateAge(year) {
+//     let currentYear = 2023;
+//     let result = currentYear - year
+//     return result
+// }
 
-//  3. Создаем еще одну функцию
-function checkAngLogAge(year, name, compareTo) {
+// //  3. Создаем еще одну функцию
+// function checkAngLogAge(year, name, compareTo) {
 
-//  2.
-if (calculateAge(year) < compareTo) {
+// //  2.
+// if (calculateAge(year) < compareTo) {
     
-    console.log('Возраст ' + name + ' меньше ' + compareTo + ' лет');
-} else {
-    console.log('Возраст ' + name + ' больше ' + compareTo + ' лет');
-}
-}
-checkAngLogAge(carAge, "машины", 8)
-checkAngLogAge(personAge, 'человека', 30)
+//     console.log('Возраст ' + name + ' меньше ' + compareTo + ' лет');
+// } else {
+//     console.log('Возраст ' + name + ' больше ' + compareTo + ' лет');
+// }
+// }
+// checkAngLogAge(carAge, "машины", 8)
+// checkAngLogAge(personAge, 'человека', 30)
+    
+//=======================
+
 
 // if (calculateAge(personeAge) > 20) {
 //     console.log('Старше 20')
@@ -188,17 +191,17 @@ checkAngLogAge(personAge, 'человека', 30)
 
 // greeting = 20 < 12 ? "Good Mo" : "Good Evening";
 // console.log(greeting)
-let chechAgee;
-let age = 17
+// let chechAgee;
+// let age = 17
 
 // Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку.
-chechAgee = age > 18 ? 'true' : 'Родители разрешили?';
-console.log(chechAgee)
+// chechAgee = age > 18 ? 'true' : 'Родители разрешили?';
+// console.log(chechAgee)
 
-function min(a, b) {
-    return a + b;
-}
-console.log(min(1, 2))
+// function min(a, b) {
+//     return a + b;
+// }
+// console.log(min(1, 2))
 
 
 // min(2, 5) == 2
@@ -206,5 +209,22 @@ console.log(min(1, 2))
 // min(1, 1) == 1
 
 
+let carName = 'ford';
+let carYear = 2008;
+let personYear = 1990;
 
+function calculateAge(year) {
+    let currentYear = 2023;
+}
 
+if ((2018 - carYear) < 10) {
+    console.log('Возраст меньше 10 лет');
+} else {
+    console.log('Возраст больше 10 лет')
+}
+
+// if ((2018 - 1990) < 10) {
+//     console.log('Возраст меньше 10 лет');
+// } else {
+//     console.log('Возраст больше 10 лет')
+// }
