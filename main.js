@@ -141,18 +141,18 @@ function calculateAge(year) {
 }
 
 //  3. Создаем еще одну функцию
-function checkAngLogAge(year) {
-
+function checkAngLogAge(year, name, compareTo) {
 
 //  2.
-if (calculateAge(year) < 10) {
-    console.log('Менее 10 лет')
+if (calculateAge(year) < compareTo) {
+    
+    console.log('Возраст ' + name + ' меньше ' + compareTo + ' лет');
 } else {
-    console.log('Более 10 лет')
+    console.log('Возраст ' + name + ' больше ' + compareTo + ' лет');
 }
 }
-checkAngLogAge(carAge)
-checkAngLogAge(personAge)
+checkAngLogAge(carAge, "машины", 8)
+checkAngLogAge(personAge, 'человека', 30)
 
 // if (calculateAge(personeAge) > 20) {
 //     console.log('Старше 20')
@@ -171,13 +171,13 @@ checkAngLogAge(personAge)
 
 // console.log(checkAge(20))
 
-function checkAge(age) {
-    if (age > 18) {
-        return true;
-    } else {
-        return confirm('Родители разрешили?');
-    }
-}
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('Родители разрешили?');
+//     }
+// }
 
 //          Ternar js
 //  if === ?
@@ -190,5 +190,21 @@ function checkAge(age) {
 // console.log(greeting)
 let chechAgee;
 let age = 17
+
+// Перепишите функцию, чтобы она делала то же самое, но без if, в одну строку.
 chechAgee = age > 18 ? 'true' : 'Родители разрешили?';
 console.log(chechAgee)
+
+function min(a, b) {
+    return a + b;
+}
+console.log(min(1, 2))
+
+
+// min(2, 5) == 2
+// min(3, -1) == -1
+// min(1, 1) == 1
+
+
+
+
