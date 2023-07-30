@@ -159,6 +159,18 @@ checkAngLogAge(personAge)
 // } else {
 //     console.log('Младше 20')
 // }
+
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('Родители разрешили?');
+//     }
+// }
+
+// console.log(checkAge(20))
+
 function checkAge(age) {
     if (age > 18) {
         return true;
@@ -167,4 +179,16 @@ function checkAge(age) {
     }
 }
 
-console.log(checkAge(20))
+//          Ternar js
+//  if === ?
+//  else === :
+
+// let greeting;
+// let time = 10;
+
+// greeting = 20 < 12 ? "Good Mo" : "Good Evening";
+// console.log(greeting)
+let chechAgee;
+let age = 17
+chechAgee = age > 18 ? 'true' : 'Родители разрешили?';
+console.log(chechAgee)
