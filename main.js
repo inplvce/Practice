@@ -7,8 +7,21 @@ let greeting;
 let time = 10;
 
 greeting = 20 < 12 ? "Good Mo" : "Good Evening";
-console.log(greeting)
-*/
+console.log(greeting) */
+
+let str = 'hello';
+let personAge = 19
+if (personAge < 18) {
+    console.log('Родители разрешают?')
+} else {
+    console.log('Человек совершеннолетний')
+}
+
+let message = personAge < 18
+console.log(message)
+
+
+
 
 // //          Шаблонные строки
 // let greeting;
