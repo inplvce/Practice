@@ -9,16 +9,11 @@ let time = 10;
 greeting = 20 < 12 ? "Good Mo" : "Good Evening";
 console.log(greeting) */
 
-let str = 'hello';
-let personAge = 19
-if (personAge < 18) {
-    console.log('Родители разрешают?')
-} else {
-    console.log('Человек совершеннолетний')
-}
+// let str = 'hello';
+// let personAge = 19
 
-let message = personAge < 18
-console.log(message)
+// let message = personAge < 18 ? 'Человек не совершеннолетний' : 'Человек совершеннолетний'
+// console.log(message)
 
 
 
@@ -66,13 +61,13 @@ console.log(message)
 // switch (carColor) {
 //     case "green":
 //         console.log('Car color is GREEN')
-//         //breake
+//         //break
 //     case "yellow":
 //         console.log('Car color is YELLOW')
-//         //breake
+//         //break
 //     case "red":
 //         console.log('Car color is RED')
-//         //breake
+//         //break
 //     default:
 //         console.log('Car color is default')
 // }
@@ -222,22 +217,93 @@ console.log(message)
 // min(1, 1) == 1
 
 
-let carName = 'ford';
-let carYear = 2008;
-let personYear = 1990;
+// let carName = 'ford';
+// let carYear = 2008;
+// let personYear = 1990;
 
-function calculateAge(year) {
-    let currentYear = 2023;
-}
+// function calculateAge(year) {
+//     let currentYear = 2023;
+// }
 
-if ((2018 - carYear) < 10) {
-    console.log('Возраст меньше 10 лет');
-} else {
-    console.log('Возраст больше 10 лет')
-}
+// if ((2018 - carYear) < 10) {
+//     console.log('Возраст меньше 10 лет');
+// } else {
+//     console.log('Возраст больше 10 лет')
+// }
 
 // if ((2018 - 1990) < 10) {
 //     console.log('Возраст меньше 10 лет');
 // } else {
 //     console.log('Возраст больше 10 лет')
 // }
+
+
+// let carColor = "yellow";
+
+// if (carColor === "red") {
+//     console.log("Цвет машины - красный")
+// } else if (carColor === "yellow") {
+//     console.log('цвет машины - желтый')
+// } else if (carColor === 'green') {
+//     console.log('цвет машины - зеленый')
+// } else {
+//     console.log('машину не красили')
+// }
+
+// switch (carColor) {
+//     case "green":
+//         console.log('car color is green')
+//         break
+//     case "yellow":
+//         console.log('car color is yellow')
+//         break
+//     case "red":
+//         console.log('car color is red')
+//         break
+//     default:
+//         console.log('car color is default')
+// }
+
+
+let carName = 'BMW';
+let carAge = 2020;
+let chelAge = 1994;
+
+// функция для вычисления возраста
+function calculateAge(year) {
+    let currentYear = 2023; 
+// result - показать результат
+    let result = currentYear - year
+// возвращаем(return) что получилось(result) 
+    return result
+}  
+
+// переписываем эту часть    =======================
+if ((2023 - carAge) < 10) {
+    console.log('Возраст машины меньше 10 лет')
+} else {
+    console.log('Возраст машины больше 10 лет')
+}
+
+// переписываем ту часть    ==================
+if (calculateAge(carAge) < 10) {
+    console.log('Возраст машины меньше 10 лет')
+} else {
+    console.log('Возраст машины больше 10 лет')
+}
+
+
+// ==========
+// терперь эту
+if ((2023 - chelAge) < 30) {
+    console.log('Возраст человека меньше 30 лет')
+} else {
+    console.log('Возраст человека больше 30 лет')
+}
+
+// 
+if (calculateAge(chelAge) < 30) {
+    console.log('Возраст человека меньше 30 лет')
+} else {
+    console.log('Возраст человека больше 30 лет')
+}
