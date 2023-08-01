@@ -269,7 +269,7 @@ let carName = 'BMW';
 let carAge = 2020;
 let chelAge = 1994;
 
-// функция для вычисления возраста
+//2. функция для вычисления возраста
 function calculateAge(year) {
     let currentYear = 2023; 
 // result - показать результат
@@ -295,15 +295,49 @@ if (calculateAge(carAge) < 10) {
 
 // ==========
 // терперь эту
-if ((2023 - chelAge) < 30) {
-    console.log('Возраст человека меньше 30 лет')
-} else {
-    console.log('Возраст человека больше 30 лет')
-}
+// if ((2023 - chelAge) < 30) {
+//     console.log('Возраст человека меньше 30 лет')
+// } else {
+//     console.log('Возраст человека больше 30 лет')
+// }
 
 // 
-if (calculateAge(chelAge) < 30) {
-    console.log('Возраст человека меньше 30 лет')
-} else {
-    console.log('Возраст человека больше 30 лет')
+// if (calculateAge(chelAge) < 30) {
+//     console.log('Возраст человека меньше 30 лет')
+// } else {
+//     console.log('Возраст человека больше 30 лет')
+// }
+
+// ========3. ТЕПЕРЬ функфию, которая поможет автоматизиовать 2 этих процесса (carAge, chelAge):
+// копируем условие, меняем возраст на calculateAge(year)
+function checkAge(year) {
+    if (calculateAge(year) < 30) {
+        console.log('Возраст человека меньше 30 лет')
+    } else {
+        console.log('Возраст человека больше 30 лет')
+    }
 }
+checkAge(chelAge)
+checkAge(carAge)
+
+let carsAge = 1992;
+let dedAge = 1943;
+
+function calcAge(years) {
+    let seichas = 2023
+    let result = seichas - years
+    return result
+}
+
+
+function check(years, name) {
+    if (calcAge(years) < 20) {
+        console.log('Возраст '+ name + ' машины меньше 20 лет')
+    } else { 
+        console.log('Возраст машины ' + name + ' больше 20 лет')
+    }
+}
+
+check(dedAge, 'деда')
+check(carAge, 'пхорошей')
+
