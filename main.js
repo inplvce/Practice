@@ -265,32 +265,32 @@ console.log(greeting) */
 // }
 
 
-let carName = 'BMW';
-let carAge = 2020;
-let chelAge = 1994;
+// let carName = 'BMW';
+// let carAge = 2020;
+// let chelAge = 1994;
 
-//2. функция для вычисления возраста
-function calculateAge(year) {
-    let currentYear = 2023; 
-// result - показать результат
-    let result = currentYear - year
-// возвращаем(return) что получилось(result) 
-    return result
-}  
+// //2. функция для вычисления возраста
+// function calculateAge(year) {
+//     let currentYear = 2023; 
+// // result - показать результат
+//     let result = currentYear - year
+// // возвращаем(return) что получилось(result) 
+//     return result
+// }  
 
-// переписываем эту часть    =======================
-if ((2023 - carAge) < 10) {
-    console.log('Возраст машины меньше 10 лет')
-} else {
-    console.log('Возраст машины больше 10 лет')
-}
+// // переписываем эту часть    =======================
+// if ((2023 - carAge) < 10) {
+//     console.log('Возраст машины меньше 10 лет')
+// } else {
+//     console.log('Возраст машины больше 10 лет')
+// }
 
-// переписываем ту часть    ==================
-if (calculateAge(carAge) < 10) {
-    console.log('Возраст машины меньше 10 лет')
-} else {
-    console.log('Возраст машины больше 10 лет')
-}
+// // переписываем ту часть    ==================
+// if (calculateAge(carAge) < 10) {
+//     console.log('Возраст машины меньше 10 лет')
+// } else {
+//     console.log('Возраст машины больше 10 лет')
+// }
 
 
 // ==========
@@ -310,34 +310,49 @@ if (calculateAge(carAge) < 10) {
 
 // ========3. ТЕПЕРЬ функфию, которая поможет автоматизиовать 2 этих процесса (carAge, chelAge):
 // копируем условие, меняем возраст на calculateAge(year)
-function checkAge(year) {
-    if (calculateAge(year) < 30) {
-        console.log('Возраст человека меньше 30 лет')
-    } else {
-        console.log('Возраст человека больше 30 лет')
-    }
+// function checkAge(year) {
+//     if (calculateAge(year) < 30) {
+//         console.log('Возраст человека меньше 30 лет')
+//     } else {
+//         console.log('Возраст человека больше 30 лет')
+//     }
+// }
+// checkAge(chelAge)
+// checkAge(carAge)
+
+// let carsAge = 1992;
+// let dedAge = 1943;
+
+// function calcAge(years) {
+//     let seichas = 2023
+//     let result = seichas - years
+//     return result
+// }
+
+
+// function check(years, name, compare) {
+//     if (calcAge(years) < compare) {
+//         console.log('Возраст '+ name + ' машины меньше ' + compare + ' лет')
+//     } else { 
+//         console.log('Возраст машины ' + name + ' больше ' + compare + ' лет')
+//     }
+// }
+
+// check(dedAge, 'деда', 98)
+// check(carAge, 'пхорошей', 23)
+
+
+
+//                  ==========  ОПРЕДЕЛЯЕМ ФУНКЦИЮ В ПЕРЕМЕННУЮ
+sayHelloTo("Inga")
+function sayHelloTo(name) {
+    console.log('hello, ' + name + '!' + ' How are you?');
 }
-checkAge(chelAge)
-checkAge(carAge)
 
-let carsAge = 1992;
-let dedAge = 1943;
+                    //===== переписываем это выажение:
 
-function calcAge(years) {
-    let seichas = 2023
-    let result = seichas - years
-    return result
-}
-
-
-function check(years, name) {
-    if (calcAge(years) < 20) {
-        console.log('Возраст '+ name + ' машины меньше 20 лет')
-    } else { 
-        console.log('Возраст машины ' + name + ' больше 20 лет')
-    }
-}
-
-check(dedAge, 'деда')
-check(carAge, 'пхорошей')
-
+// let sayHelloTo = function (name) {
+//     console.log('hello, ' + name + '!' + ' How are you?');
+// }
+// sayHelloTo('Igar')
+// !!! в этом варианте мы не можем вызвать функцию до того, как она объявлена!!!
