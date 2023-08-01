@@ -360,18 +360,32 @@ console.log(greeting) */
 
                     //=========== СТРОКИ
 
-const str1 = 'hello wrld'
-console.log(str1)
+// const str1 = 'hello wrld'
+// console.log(str1)
 
-const personName = 'Victor'
-const message = 'Your name is' + ' ' + personName
-console.log(message)
+// const personName = 'Victor'
+// const message = 'Your name is' + ' ' + personName
+// console.log(message)
+// //                                     МЕТОДЫ
 
+// let newMessage = 'hello world!!!'
+// console.log(newMessage.length)
+// console.log(newMessage.toUpperCase())
+// console.log(newMessage.toLowerCase())
+// console.log(newMessage.charAt(1))
+// //  и тд
 
-let newMessage = 'hello world!!!'
-console.log(newMessage.length)
-console.log(newMessage.toUpperCase())
-console.log(newMessage.toLowerCase())
-console.log(newMessage.charAt(1) )
+//                                      ЧИСЛА
 
-//                                     МЕТОДЫ
+// function nameMark(name) {
+
+// console.log('Hello, ' + name + '!' + ' How are you?')
+// }
+// nameMark('Mark')
+
+// let greeting = 'Hi, John!'
+// let message = 'How are you?'
+let userName = 'John'
+
+// let sayHi = greeting + message;
+console.log(`Hi, ${userName}! How are you?`);
