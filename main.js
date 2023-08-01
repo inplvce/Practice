@@ -385,7 +385,34 @@ console.log(greeting) */
 
 // let greeting = 'Hi, John!'
 // let message = 'How are you?'
-let userName = 'John'
+// let userName = 'John'
 
 // let sayHi = greeting + message;
-console.log(`Hi, ${userName}! How are you?`);
+// console.log(`Hi, ${userName}! How are you?`); // ========== КОНКАТЕНАЦИЯ
+
+// //                  ========== FUNCTION
+// function sayHi(name) {
+//     console.log(`Hi, ${name}! How are you?`)
+// }
+// sayHi('Dima')
+// sayHi('Igar')
+// sayHi('Dina')
+
+//                  ========== RETURN
+
+// function sum(a, b) {
+//     let result = a + b
+//     return result; // сразу после этой строки функция завершает свою работу!!! 
+// }
+// let res = sum(44, 5)
+// console.log(res)
+
+
+// //                  ========== FUNCTION КАК АРГУМЕНТ
+function summ(a, b) {
+    return a +  b
+}
+
+console.log(summ(summ(5, 6), summ(5, 6))) 
+
+// 1:31:00
