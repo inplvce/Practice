@@ -344,10 +344,10 @@ console.log(greeting) */
 
 
 //                  ==========  ОПРЕДЕЛЯЕМ ФУНКЦИЮ В ПЕРЕМЕННУЮ
-sayHelloTo("Inga")
-function sayHelloTo(name) {
-    console.log('hello, ' + name + '!' + ' How are you?');
-}
+// sayHelloTo("Inga")
+// function sayHelloTo(name) {
+//     console.log('hello, ' + name + '!' + ' How are you?');
+// }
 
                     //===== переписываем это выажение:
 
@@ -356,3 +356,22 @@ function sayHelloTo(name) {
 // }
 // sayHelloTo('Igar')
 // !!! в этом варианте мы не можем вызвать функцию до того, как она объявлена!!!
+
+
+                    //=========== СТРОКИ
+
+const str1 = 'hello wrld'
+console.log(str1)
+
+const personName = 'Victor'
+const message = 'Your name is' + ' ' + personName
+console.log(message)
+
+
+let newMessage = 'hello world!!!'
+console.log(newMessage.length)
+console.log(newMessage.toUpperCase())
+console.log(newMessage.toLowerCase())
+console.log(newMessage.charAt(1) )
+
+//                                     МЕТОДЫ
