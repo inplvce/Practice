@@ -438,3 +438,22 @@ console.log(greeting) */
 
 //  ========================      D   O   M
 
+// document.querySelector('h2').classList.add('red')
+
+const heading2 = document.querySelector('h2');
+heading2.classList.add('red')
+
+// // const heading2 = document.querySelector('h2');
+// // heading2.classList.add('green')
+
+// const heading3 = document.querySelector('h3').classList.add('blue')
+
+const headings = document.querySelectorAll('h2');
+console.log(headings);
+
+// headings.classList.add('red-text');
+
+for (let item of headings) {
+    console.log(item)
+    item.classList.add('red-text');  // Красит все заголовки h2 в красный цвет
+}
