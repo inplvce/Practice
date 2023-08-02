@@ -440,20 +440,37 @@ console.log(greeting) */
 
 // document.querySelector('h2').classList.add('red')
 
+// выбор одного элемента
 const heading2 = document.querySelector('h2');
 heading2.classList.add('red')
+
 
 // // const heading2 = document.querySelector('h2');
 // // heading2.classList.add('green')
 
 // const heading3 = document.querySelector('h3').classList.add('blue')
 
+
+//выбор коллекции элементов
 const headings = document.querySelectorAll('h2');
 console.log(headings);
-
-// headings.classList.add('red-text');
-
+// for of метод
 for (let item of headings) {
     console.log(item)
     item.classList.add('red-text');  // Красит все заголовки h2 в красный цвет
 }
+
+const pa = document.querySelectorAll('p');
+console.log(pa)
+
+for (let iitems of pa) {
+console.log(iitems)
+iitems.classList.add('green-text');
+}
+
+const headin = document.querySelectorAll('h1');
+console.log(headin);
+// forEach метод
+headin.forEach(function (h1) {
+    h1.classList.add('blue-text');
+})
