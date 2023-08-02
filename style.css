@@ -6,7 +6,7 @@ body {
 .none { display: none; }
 
 .red { border: 1px solid red; }
-.green { border: 1px solid green; }
+//green { border: 1px solid green; }
 .blue { border: 1px solid blue; }
 
 .red-text { color: red; }

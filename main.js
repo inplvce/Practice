@@ -415,20 +415,26 @@ console.log(greeting) */
 
 // console.log(summ(summ(5, 6), summ(5, 6))) 
 
-// 1:31:00
+// 1:31:00  =======================
 
-function summ(a, b) {
-    return a + b
-}
 
-function diff(a, b) {
-    return a - b
-}
+//                     ========== ФУНКЦИЯ КАК АРГУМЕНТ
+// function summ(a, b) {
+//     return a + b
+// }
 
-function doSomething(func) {
-    let x = 10;
-    let y = 15;
-    let result = func(x, y)
-    console.log(result)
-}
-doSomething(summ)
+// function diff(a, b) {
+//     return a - b
+// }
+
+// function doSomething(func) {
+//     let x = 10;
+//     let y = 15;
+//     let result = func(x, y)
+//     console.log(result)
+// }
+// doSomething(summ)
+// doSomething(diff)
+
+//  ========================      D   O   M
+
