@@ -415,8 +415,6 @@ console.log(greeting) */
 
 // console.log(summ(summ(5, 6), summ(5, 6))) 
 
-// 1:31:00  =======================
-
 
 //                     ========== ФУНКЦИЯ КАК АРГУМЕНТ
 // function summ(a, b) {
@@ -441,8 +439,8 @@ console.log(greeting) */
 // document.querySelector('h2').classList.add('red')
 
 // выбор одного элемента
-const heading2 = document.querySelector('h2');
-heading2.classList.add('red')
+// const heading2 = document.querySelector('h2');
+// heading2.classList.add('red')
 
 
 // // const heading2 = document.querySelector('h2');
@@ -452,25 +450,51 @@ heading2.classList.add('red')
 
 
 //выбор коллекции элементов
-const headings = document.querySelectorAll('h2');
-console.log(headings);
-// for of метод
-for (let item of headings) {
-    console.log(item)
-    item.classList.add('red-text');  // Красит все заголовки h2 в красный цвет
-}
+// const headings = document.querySelectorAll('h2');
+// console.log(headings);
+// // for of метод
+// for (let item of headings) {
+//     console.log(item)
+//     item.classList.add('red-text');  // Красит все заголовки h2 в красный цвет
+// }
 
-const pa = document.querySelectorAll('p');
-console.log(pa)
+// const pa = document.querySelectorAll('p');
+// console.log(pa)
 
-for (let iitems of pa) {
-console.log(iitems)
-iitems.classList.add('green-text');
-}
+// for (let iitems of pa) {
+// console.log(iitems)
+// iitems.classList.add('green-text');
+// }
 
-const headin = document.querySelectorAll('h1');
-console.log(headin);
-// forEach метод
-headin.forEach(function (h1) {
-    h1.classList.add('blue-text');
-})
+// const headin = document.querySelectorAll('h1');
+// console.log(headin);
+// // forEach метод
+// headin.forEach(function (h1) {
+//     h1.classList.add('blue-text');
+// })
+
+
+// 1:31:00  =======================   3:20:1
+
+
+//                  ==========    CSS КЛАССЫ   ==========
+
+// методы:
+/*
+element.classList.add()
+.add() - добавляет класс
+.remove() - удаляет
+.toggle() - переключает (добавляет если не было, убирает если был)
+.contains() - возвращает true или false  взависимости от того, есть ли
+    такой класс
+
+*/
+
+const heading = document.querySelector('h2');
+console.log(heading);
+
+heading.classList.add('red-text');
+heading.classList.remove('red-text');
+heading.classList.toggle('green-text');
+heading.classList.contains('red-text');
+heading.classList.toggle('green');
