@@ -500,23 +500,36 @@ element.classList.add()
 // heading.classList.toggle('green');
 
 
-               ==========    АТРИБУТЫ   ==========
+//           //     ==========    АТРИБУТЫ   ==========
 
-const img = document.querySelector('#logo');
-const srcValue = img.getAttribute('src');
-console.log(srcValue)
+// const img = document.querySelector('#logo');
+// const srcValue = img.getAttribute('src');
+// console.log(srcValue)
 
-img.setAttribute('src', './img/php.png') //добавляем новый путьб меняем картинку
-//(она появилась очень огромная)
-//задаем размеры (ширина, px)
-img.setAttribute('width', '200') //устанавливаем размер в 200px 
-img.src = './img/js.png'; //снова возвращием старую каритинку JS
+// img.setAttribute('src', './img/php.png') //добавляем новый путьб меняем картинку
+// //(она появилась очень огромная)
+// //задаем размеры (ширина, px)
+// img.setAttribute('width', '200') //устанавливаем размер в 200px 
+// img.src = './img/js.png'; //снова возвращием старую каритинку JS
 
-// ПЕРЕХОДИМ К КНОПКЕ
-const button = document.querySelector('#button'); //находим кнопку по айдишнику
-button.setAttribute('value', 'Send') // ('значение', 'меняем надпись на кнопке')
+// // ПЕРЕХОДИМ К КНОПКЕ
+// const button = document.querySelector('#button'); //находим кнопку по айдишнику
+// button.setAttribute('value', 'Send') // ('значение', 'меняем надпись на кнопке')
 
-//но, если такой класс уже есть - проще так:
-button.value = 'Text for button'
+// //но, если такой класс уже есть - проще так:
+// button.value = 'Text for button'
 
-//                ==========    РАБОТА С ПРОСЛУШКОЙ СОБЫТИЙ   ==========
+//                        ==========    РАБОТА С ПРОСЛУШКОЙ СОБЫТИЙ   ==========
+//            (любое движение мыши курсора, нажатие, перемещение, скролл и тд = событие ,))
+
+const button = document.querySelector('#button')
+const logo = document.querySelector('#logo')
+
+button.value = 'Delete';
+
+button.addEventListener('click', function () {
+console.log('Click!');
+img.remove();
+})
+
+//                        ==========  Прослушка событий 2. Форма ========== 03:50:00
