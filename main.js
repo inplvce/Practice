@@ -72,7 +72,102 @@ console.log(greeting) */
 //         console.log('Car color is default')
 // }
 
+// function caseInSwitch(val) {
+//     var answer = "";
+//     switch(val) {
+//       case 1:
+//         answer = "alpha";
+//         break;
+//       case 2:
+//         answer = "beta";
+//         break;
+//       case 3:
+//         answer = "gamma";
+//         break;
+//       case 4:
+//         answer = "delta";
+//         break;
+//     }
+    
+//     return answer;  
+//   }
+    
+//   // Change this value to test
+//   console.log(caseInSwitch(3));
+    
+//   /*
+//   Write a switch statement which tests val and sets answer for the following conditions:
+//   1 - "alpha"
+//   2 - "beta"
+//   3 - "gamma"
+//   4 - "delta"
+//   */
 
+
+
+// function switchOfStuff(val) {
+//     let answer = "";
+//     // Only change code below this line
+//   switch(val) {
+//   case "a":
+//   answer = "apple";
+//   break;
+//   case "b":
+//   answer = "bird";
+//   break;
+//   case "c":
+//   answer = "cat";
+//   break;
+//   default: 
+//   answer = 'stuff';
+//   break;
+    
+//   }
+    
+    
+//     // Only change code above this line
+//     return answer;
+//   }
+    
+//   console.log(switchOfStuff("c"));
+
+
+    // function chainToSwitch(val) {
+    //     let answer = "";
+    //     // Only change code below this line
+    
+    //   switch (val) {
+    //       case 'bob': 
+    //       answer = "Marley";
+    //       break;
+    //       case 42:
+    //       answer = "The Answer";
+    //       break;
+    //       case 1:
+    //       answer = "There is no #1";
+    //       break;
+    //       case 99:
+    //       answer = "Missed me by this much!";
+    //       break;
+    //       case 'John':
+    //       answer = "";
+    //       break;
+    //         case 156:
+    //       answer = "";
+    //       break;
+    //       default:
+    //       answer = "Ate Nine";
+    //       break;
+    //     }
+    
+    //     // Only change code above this line
+    //     return answer;
+    //   }
+    
+    //   chainToSwitch(7);
+
+
+    
 //                  ========== FUNCTIONS ==========
 
 //  DRY - don't repeat yourself
