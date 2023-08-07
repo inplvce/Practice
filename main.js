@@ -123,8 +123,7 @@ console.log(greeting) */
 //   break;
     
 //   }
-    
-    
+        
 //     // Only change code above this line
 //     return answer;
 //   }
@@ -171,6 +170,26 @@ console.log(greeting) */
 //                  ========== FUNCTIONS ==========
 
 //  DRY - don't repeat yourself
+
+/*
+Измените функцию abTestтак, чтобы, если aили bменьше, 
+0функция немедленно завершалась со значением undefined.
+*/
+// Setup
+// function abTest(a, b) {
+//     // Only change code below this line
+//   if (a < 0 || b < 0) {
+//     return undefined;
+//   }
+//     // Only change code above this line
+    
+//     return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+//   }
+    
+//   abTest(2,2);
+
+
+
 
 // function sayHi() {
 //     console.log('Привет уважаемый пользователь!');
@@ -628,3 +647,21 @@ img.remove();
 })
 
 //                        ==========  Прослушка событий 2. Форма ========== 03:50:00
+
+//                      ==========   ОБЪЕКТЫ    ==========
+
+
+const person = {
+    userName: 'Afonya',
+    age: 38,
+    isMarried: true,
+}
+console.log(person)
+
+person.profession = 'designer';
+console.log(person)
+console.log(person.isMarried)
+console.log(person['age'])
+
+delete person.isMarried;
+console.log(person)
