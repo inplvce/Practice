@@ -648,20 +648,31 @@ img.remove();
 
 //                        ==========  Прослушка событий 2. Форма ========== 03:50:00
 
-//                      ==========   ОБЪЕКТЫ    ==========
+//                      ==========   ОБЪЕКТЫ, this   ==========
 
+
+// const person = {
+//     userName: 'Afonya',
+//     age: 38,
+//     isMarried: true,
+// }
+// console.log(person)
+
+// person.profession = 'designer';
+// console.log(person)
+// console.log(person.isMarried)
+// console.log(person['age'])
+
+// delete person.isMarried;
+// console.log(person)
 
 const person = {
     userName: 'Afonya',
     age: 38,
     isMarried: true,
+    sayHi: function (name) {
+        console.log(this)
+        console.log(`hi, ${name}! My name is ${this.userName}!`);
+    }
 }
-console.log(person)
-
-person.profession = 'designer';
-console.log(person)
-console.log(person.isMarried)
-console.log(person['age'])
-
-delete person.isMarried;
-console.log(person)
+person.sayHi('Vitya')
