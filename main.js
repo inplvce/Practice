@@ -633,20 +633,7 @@ element.classList.add()
 // //но, если такой класс уже есть - проще так:
 // button.value = 'Text for button'
 
-//                        ==========    РАБОТА С ПРОСЛУШКОЙ СОБЫТИЙ   ==========
-//            (любое движение мыши курсора, нажатие, перемещение, скролл и тд = событие ,))
 
-const button = document.querySelector('#button')
-const logo = document.querySelector('#logo')
-
-button.value = 'Delete';
-
-button.addEventListener('click', function () {
-console.log('Click!');
-img.remove();
-})
-
-//                        ==========  Прослушка событий 2. Форма ========== 03:50:00
 
 //                      ==========   ОБЪЕКТЫ, this   ==========
 
@@ -666,13 +653,53 @@ img.remove();
 // delete person.isMarried;
 // console.log(person)
 
-const person = {
-    userName: 'Afonya',
-    age: 38,
-    isMarried: true,
-    sayHi: function (name) {
-        console.log(this)
-        console.log(`hi, ${name}! My name is ${this.userName}!`);
-    }
+
+//                  ==========              this
+// const person = {
+//     userName: 'Afonya',
+//     age: 38,
+//     isMarried: true,
+//     sayHi: function (name) {
+//         console.log(this)
+//         console.log(`hi, ${name}! My name is ${this.userName}!`); // this. (person.)
+//     }
+// }
+// person.sayHi('Vitya')
+
+//                  ==========      Обход объектов через   for in 02:42:39          ========
+
+
+//                        ==========    РАБОТА С ПРОСЛУШКОЙ СОБЫТИЙ   ==========
+//            (любое движение мыши курсора, нажатие, перемещение, скролл и тд = событие ,))
+
+const button = document.querySelector('#button')
+const logo = document.querySelector('#logo')
+
+button.value = 'Delete';
+
+button.addEventListener('click', function () {
+console.log('Click!');
+img.remove();
+})
+
+//                        ==========  Прослушка событий 2. Форма ========== 03:50:00
+
+// const inputText = document.querySelector('#input-text');
+// const textBlock = document.querySelector('#text-block');
+
+// inputText.addEventListener('input', function() {        
+//     console.log(inputText.value);
+//     textBlock.innerText = inputText.value
+// }) 
+
+// или можно записать это так, отдельно выведя функцию:
+
+const inputText = document.querySelector('#input-text');
+const textBlock = document.querySelector('#text-block');
+
+inputText.addEventListener('input', inputHandler);       // HE ставим круглые скобки B inputHandler
+
+function inputHandler() {           //handle - с англ. Обработчик
+    console.log(inputText.value);
+    textBlock.innerText = inputText.value
 }
-person.sayHi('Vitya')
