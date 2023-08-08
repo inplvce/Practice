@@ -638,31 +638,7 @@ element.classList.add()
 //                      ==========   ОБЪЕКТЫ, this   ==========
 
 
-const laptop1 = {
-    name: 'macbookPro',
-    manufacturer: 'APPLE',
-    price: 3000
-}
 
-const laptop2 = {
-    name: 'macbookAir',
-    manufacturer: {                 //  объект в объекте :)
-        title: 'APPLE',
-        factoriesCount: 10,
-        factoryAdress: 'China, JohueLee 12'
-    },
-    price: 2000
-}
-console.log(laptop2.manufacturer.factoryAdress)
-
-const moneyTransfering = {
-    from: 'VV',
-    to: 'Ivan',
-    amount: 10
-}
-
-laptop2.manufacturer.factoryAdress = 'China, JohueLee 13';
-console.log(laptop2.manufacturer)
 
 // const person = {
 //     userName: 'Afonya',
@@ -729,3 +705,115 @@ console.log(laptop2.manufacturer)
 //     console.log(inputText.value);
 //     textBlock.innerText = inputText.value
 // }
+
+//                   ==========  Объекты (incubator)
+
+// const laptop1 = {
+//     name: 'macbookPro',
+//     manufacturer: 'APPLE',
+//     price: 3000
+// }
+
+// const laptop2 = {
+//     name: 'macbookAir',
+//     manufacturer: {                 //  объект в объекте :)
+//         title: 'APPLE',
+//         factoriesCount: 10,
+//         factoryAdress: 'China, JohueLee 12'
+//     },
+//     price: 2000
+// }
+// console.log(laptop2.manufacturer.factoryAdress)
+
+// const moneyTransfering = {
+//     from: 'VV',
+//     to: 'Ivan',
+//     amount: 10
+// }
+
+// laptop2.manufacturer.factoryAdress = 'China, JohueLee 13';
+// console.log(laptop2.manufacturer)
+
+// let room = {
+//     wall1: {
+//         hasWindow: true,
+//         color: 'gray',
+//         consditioner: {
+//             manufacturer: 'ASUS',
+//             power: 220
+//         }
+//     },
+//     wall2: {
+//         hasWindow: false,
+//         color: 'gray',
+//         consditioner: null
+//     },
+//     wall3: {
+//         hasWindow: false,
+//         color: 'gray',
+//         consditioner: null
+//     },
+//     wall4: {
+//         hasWindow: false,
+//         color: 'gray',
+//         consditioner: null
+//     }
+// }
+// console.log(room.wall1.consditioner.manufacturer)
+
+
+
+const word0 = {
+    original: 'Wassup',
+    translation: 'Здарова'
+}
+
+const word1 = {
+    original: 'Bye',
+    translation: 'Пока'
+}
+
+const word2 = {
+    original: 'Programmer',
+    translation: ' Программист'
+}
+
+const wordsCount = 3;
+
+const resultMessages = {
+    finishSuccess: 'Молодец. Good result!',
+    finishUnsuccess: 'Молодец. Но постарайся лучше!'
+}
+
+const settings = {
+    correctAnswersMinPercent: 50
+}
+
+const result = {
+    correctAnswersCount: 0
+}
+
+const userAnswer0 = prompt(word0.original);
+alert(userAnswer0 === word0.translation);
+if (userAnswer0 === word0.translation) {
+    result.correctAnswersCount = result.correctAnswersCount + 1
+}
+
+const userAnswer1 = prompt(word1.original);
+alert(userAnswer1 === word1.translation);
+if (userAnswer1 === word1.translation) {
+    result.correctAnswersCount = result.correctAnswersCount + 1
+}
+
+    const userAnswer2 = prompt(word2.original);
+alert(userAnswer2 === word2.translation);
+if (userAnswer2 === word2.translation) {
+    result.correctAnswersCount = result.correctAnswersCount + 1
+} 
+
+const uderCorrectAnswersPercent = result.correctedAnswersCount / wordsCount * 100;
+	if (userCorrectAnswersPercent > setting.correctAnswersMinPercent) {
+		alert(resultMessages.finishSuccess);
+	} else {
+		alert(resultMessages.finishUnsucces);
+	}
