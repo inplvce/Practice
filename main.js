@@ -638,6 +638,32 @@ element.classList.add()
 //                      ==========   ОБЪЕКТЫ, this   ==========
 
 
+const laptop1 = {
+    name: 'macbookPro',
+    manufacturer: 'APPLE',
+    price: 3000
+}
+
+const laptop2 = {
+    name: 'macbookAir',
+    manufacturer: {                 //  объект в объекте :)
+        title: 'APPLE',
+        factoriesCount: 10,
+        factoryAdress: 'China, JohueLee 12'
+    },
+    price: 2000
+}
+console.log(laptop2.manufacturer.factoryAdress)
+
+const moneyTransfering = {
+    from: 'VV',
+    to: 'Ivan',
+    amount: 10
+}
+
+laptop2.manufacturer.factoryAdress = 'China, JohueLee 13';
+console.log(laptop2.manufacturer)
+
 // const person = {
 //     userName: 'Afonya',
 //     age: 38,
@@ -672,17 +698,17 @@ element.classList.add()
 //                        ==========    РАБОТА С ПРОСЛУШКОЙ СОБЫТИЙ   ==========
 //            (любое движение мыши курсора, нажатие, перемещение, скролл и тд = событие ,))
 
-const button = document.querySelector('#button')
-const logo = document.querySelector('#logo')
+// const button = document.querySelector('#button')
+// const logo = document.querySelector('#logo')
 
-button.value = 'Delete';
+// button.value = 'Delete';
 
-button.addEventListener('click', function () {
-console.log('Click!');
-img.remove();
-})
+// button.addEventListener('click', function () {
+// console.log('Click!');
+// img.remove();
+// })
 
-//                        ==========  Прослушка событий 2. Форма ========== 03:50:00
+//                        ==========  Прослушка событий 2. Форма ========== 03:50:00 ПОВТОР
 
 // const inputText = document.querySelector('#input-text');
 // const textBlock = document.querySelector('#text-block');
@@ -694,12 +720,12 @@ img.remove();
 
 // или можно записать это так, отдельно выведя функцию:
 
-const inputText = document.querySelector('#input-text');
-const textBlock = document.querySelector('#text-block');
+// const inputText = document.querySelector('#input-text');
+// const textBlock = document.querySelector('#text-block');
 
-inputText.addEventListener('input', inputHandler);       // HE ставим круглые скобки B inputHandler
+// inputText.addEventListener('input', inputHandler);       // HE ставим круглые скобки B inputHandler
 
-function inputHandler() {           //handle - с англ. Обработчик
-    console.log(inputText.value);
-    textBlock.innerText = inputText.value
-}
+// function inputHandler() {           //handle - с англ. Обработчик
+//     console.log(inputText.value);
+//     textBlock.innerText = inputText.value
+// }
